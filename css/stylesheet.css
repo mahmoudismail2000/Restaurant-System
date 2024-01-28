@@ -1,0 +1,183 @@
+body{
+    background-color: #0D0D0D;
+}
+i{
+    cursor: pointer;
+}
+.boxImg,.boxImgCat{
+    border-radius: 15px;
+}
+
+.boxStyle,.boxStyleCat{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.8);
+    transition: all .5s;
+    cursor: pointer;
+    
+}
+.navSide img{
+    cursor: pointer;
+}
+
+.boxImg:hover .boxStyle{
+    top: 0px;
+
+}
+
+.boxImgCat:hover .boxStyleCat{
+    top: 0px;
+
+}
+.navSide{
+    width: 20%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.navOptions{
+    width: 80%;
+    height: 100%;
+    background-color: #0D0D0D;
+}
+.navAll{
+    position: fixed;
+    top: 0px;
+    left: -256px;
+    width: 320px;
+    height: 100%;
+    background-color: aqua;
+    z-index: 10;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.closeIcon{
+    font-size: 45px;
+}
+
+.endIcons{
+    font-size: 15px;
+}
+
+ul li{
+    list-style: none;
+    margin: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mealDetails,#categories,#contactUs{
+    display: none;
+}
+#mealDetails img{
+    border-radius: 15px;
+}
+#mealDetails span{
+    font-size: 20px;
+}
+
+#search .form-control::placeholder{
+    color: gray;
+
+}
+
+#contactUs{
+    height: 90vh !important;
+}
+
+#contactUs .alert{
+    margin-top: 10px;
+}
+
+
+#loading{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #021b25;
+   
+    
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+  @media all and (max-width:800px){
+    .container{
+        width: 80% !important;
+        margin-left: 72px !important;
+    }
+    .inpForm{
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+    #contactUs .col-md-10{
+        display: flex !important;
+        flex-direction: column !important;
+        
+
+    }
+    #contactUs .col-md-10 .alert{
+        margin-bottom: 0px !important;
+        
+
+    }
+    #contactUs{
+       height: auto !important;
+        
+
+    }
+    
+
+  }
+  @media all and (min-width:800px) and (max-width:1100px){
+    .container{
+        width: 90% !important;
+        margin-left: 72px !important;
+    }
+
+  }
